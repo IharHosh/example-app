@@ -5,7 +5,9 @@
 <body>
     <form action="{{route('user.posts.store')}}" method="post">
         @csrf
-        <input name="Title">
+        <label>
+            <input name="Title">
+        </label>
         <button type="submit">On</button>
     </form>
     <br>
@@ -16,7 +18,7 @@
             </tr>
         </thead>
         <tbody>
-        
+        <p>Hello!</p>
         </tbody>
         </table>
 
