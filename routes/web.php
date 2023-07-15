@@ -30,6 +30,13 @@ Route::get('/', function(){
     return view('home');
 });
 
+
+
+
+
+
+
+
 // User
 
 // Route::prefix('user')->group(function (){
