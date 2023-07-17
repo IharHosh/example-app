@@ -86,9 +86,33 @@ app/SBlog/Core/BlogApp.php
 public/index.php
     И подключим наш класс new \App\Sblog\Core\BlogApp();
 
-    // данный скрипт в ф-ле resources/views/home.blade.php выводит значение по ключу 'login' из ф-ла params.php
     // таким образом можно выводить какие то пар-ры из ф-ла params.php в тех вьюхах где это необходимо
+    // данный скрипт в ф-ле resources/views/home.blade.php выводит значение по ключу 'login' из ф-ла params.php
 @php
     $p= \App\SBlog\Core\BlogApp::get_instance()->getProperty('login');
     dd($p);
 @endphp
+
+    20. Регистрация и авторизация
+    Установим Laravel Breeze с помощью Composer:
+    для этого запустим след. команду:
+
+composer require laravel/breeze --dev
+
+    После установки Breeze мы можем создать шаблон для своего приложения
+    После того, как Composer установил пакет Laravel Breeze, мы можем запустить breeze:install команду Artisan.
+
+php artisan breeze:install blade
+
+    или php artisan breeze:install --dark (поддержку «темного режима» )
+
+    Эта команда публикует представления аутентификации, маршруты, контроллеры и другие ресурсы для нашего приложения
+
+    После установки скаффолдинга Breeze мы также должны скомпилировать интерфейсные ресурсы вашего приложения:
+
+php artisan migrate
+npm install
+npm run dev
+
+    Затем вы можем перейти к своему приложению /login или /register URL-адресам в своем веб-браузере. Все маршруты
+    Breeze определены в routes/auth.phpфайле.

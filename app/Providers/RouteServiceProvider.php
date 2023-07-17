@@ -17,7 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/home';
+    public const HOME = '/dashboard';
     
     // Ниже приведенный скрипт дает возможность связывать роуты с контроллерами
     // protected $namespace = 'App\\Http\\Controllers'; 
