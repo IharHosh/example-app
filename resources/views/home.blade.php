@@ -22,5 +22,11 @@
         </tbody>
         </table>
 
+{{-- выведем данные из params на страничке для демонстрации данного класса --}}
+@php
+    $p= \App\SBlog\Core\BlogApp::get_instance()->getProperty('login');
+    dd($p);
+@endphp
+
 </body>
 @endsection
